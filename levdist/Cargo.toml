@@ -1,0 +1,19 @@
+[package]
+name = "levdist"
+version = "0.1.0"
+authors = ["ralston"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "levdist"
+crate-type = ["dylib"]
+
+[dependencies]
+ndarray = "~0.13"
+
+[dependencies.pyo3]
+version = "0.12.1"
+features = ["extension-module"]
+
